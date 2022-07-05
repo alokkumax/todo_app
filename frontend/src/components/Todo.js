@@ -24,7 +24,7 @@ export default function Todo() {
     return (
         <>
             <div className="container mt-4">
-                <h2 className="text-start book">Health and Hygiene</h2>
+                <h2 className="text-start book">Add a Todo</h2>
                 
 
                 <form className="d-flex" onSubmit={onSubmitTodo}>

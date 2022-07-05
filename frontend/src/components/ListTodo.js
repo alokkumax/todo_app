@@ -22,7 +22,7 @@ const ListTodos = () => {
             const response = await fetch("http://localhost:5000/todo");
             const jsonData = await response.json()
             setTodos(jsonData)
-            document.getElementById("demo").innerHTML = jsonData.length;
+            document.getElementById("demo").innerHTML = "You got "+jsonData.length+" Todos";
         } catch (error) {
             console.log(error)
         }
