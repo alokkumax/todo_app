@@ -6,7 +6,7 @@ export default function Todo() {
     const onSubmitTodo = async e =>{
         e.preventDefault();
         try {
-            const body = {description}
+            const body = {description};
             const response = await fetch("/todo",{
                 method : "POST",
                 headers : {"Content-Type":"application/json"},
