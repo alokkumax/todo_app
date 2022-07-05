@@ -7,7 +7,7 @@ export default function Todo() {
         e.preventDefault();
         try {
             const body = {description};
-            const response = await fetch("/todo",{
+            const response = await fetch("http://localhost:5000/todo",{
                 method : "POST",
                 headers : {"Content-Type":"application/json"},
                 body: JSON.stringify(body)
@@ -15,7 +15,7 @@ export default function Todo() {
 
             })
             console.log(response)
-            // window.location = "/";
+            window.location = "/";
         } catch (error) {
             console.log(error);
         }

@@ -6,20 +6,20 @@ const ListTodos = () => {
 
     const dltTodo = async id => {
         try {
-            const dltTodo = await fetch(`/todo/${id}`, {
+            const dltTodo = await fetch(`http://localhost:5000/todo/${id}`, {
                 method: "DELETE",
             });
             setTodos(todos.filter(description => description.todo_id !== id))
             console.log(dltTodo)
             window.location = "/"
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 
     const getTodo = async () => {
         try {
-            const response = await fetch("/todo")
+            const response = await fetch("http://localhost:5000/todo");
             const jsonData = await response.json()
             setTodos(jsonData)
             document.getElementById("demo").innerHTML = jsonData.length;
