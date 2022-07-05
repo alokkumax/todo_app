@@ -40,7 +40,7 @@ const ListTodos = () => {
                     <tr>
                         {/* <th scope="col">#</th> */}
                         {/* <th scope="col">Todo#</th> */}
-                        <th scope="col" className='book'>Todos<p id="demo"></p></th>
+                        <th id="demo" className='book'></th>
                         {/* <th scope="col">Edit</th> */}
                         {/* <th scope="col"></th> */}
                     </tr>
